@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+    <style>
+      .font-bungee { font-family: 'Bungee', cursive, sans-serif; }
+      @font-face {
+        font-family: 'animeFont';
+        src: url('/src/assets/font/more/StrangerThings.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'animeFont2';
+        src: url('/src/assets/font/more/StrangerThings.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      .font-anime2 { font-family: 'animeFont2', cursive, sans-serif; }
+      .font-anime { font-family: 'animeFont', cursive, sans-serif; }
+    </style>
+</head>
+<body class="m-0 font-sans">
+    <nav
+      class=" hidden md:block w-22 h-auto bg-[#47474791] dark:bg-[#dbdbdbc0]  flex-col items-center p-4 rounded-3xl fixed left-4 top-1/2 transform -translate-y-1/2 space-y-4 z-50 transition-all duration-300 ease-in-out group hover:w-52">
+      <a
+        href="#"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+        class="flex items-center text-white p-2 rounded-full bg-gray-900 hover:bg-gray-800 transition-colors w-full">
+        <svg
+          class="w-10 h-9 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25">
+          </path>
+        </svg>
+        <span
+          class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-mono"
+          >Home</span>
+
+      </a>
+      <a
+        href="#projects"
+        class="flex items-center text-white p-2 rounded-full bg-gray-900 hover:bg-gray-800 transition-colors w-full">
+
+        <svg
+          class="w-10 h-9 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z">
+          </path>
+        </svg>
+        <span
+          class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-mono"
+          >Projects</span>
+      </a>
+      <a
+        href="#about"
+        class="flex items-center text-white p-2 rounded-full bg-gray-900 hover:bg-gray-800 transition-colors w-full font-mono">
+        <svg
+          class="w-10 h-9 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z">
+          </path>
+        </svg>
+        <span
+          class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-mono"
+          >About Me</span>
+      </a>
+
+      <a
+        href="#tech"
+        class="flex items-center text-white p-2 rounded-full bg-gray-900 hover:bg-gray-800 transition-colors w-full font-mono">
+        <svg
+          class="w-10 h-9 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z">
+          </path>
+        </svg>
+        <span
+          class="ml-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-mono"
+          >Tech Stack</span>
+          
+      </a>
+      <a
+        href="#contact"
+        class="flex items-center text-white p-2 rounded-full bg-gray-900 hover:bg-gray-800 transition-colors w-full">
+        <svg
+          class="w-10 h-9 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75">
+          </path>
+        </svg>
+        <span
+          class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-mono"
+          >Contact</span>
+      </a>
+      <div class="w-15 h-0.5 bg-gray-300 dark:bg-gray-900"></div>
+      <a
+        id="toggle"
+        class="flex items-center text-white dark:text-black p-2 rounded-full bg-gray-900 dark:bg-gray-300 hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors w-full cursor-pointer">
+        <svg
+          class="w-10 h-9 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+          ></path>
+        </svg>
+        <span
+          class="ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-mono">
+          Toggle Theme
+        </span>
+      </a>
+  </nav>
+
+    <!-- Home Section (fixed background) -->
+    <div id="home" class="fixed inset-0 w-full h-screen z-0 pointer-events-none">
+      <div  class="h-full flex flex-col items-center justify-center grid-bg bg-[#f8f4e2b4] dark:bg-[#7a7a7a] dark:grid-bg">
+        <div class="absolute inset-0 flex ml-5 sm:ml-70 mt-40 sm:mt-40 z-0 sm:z-0">
+          <h1 class="text-[min(20vw,65px)] sm:text-[min(30vw,184px)] text-shadow-lg/90 font-light font-anime2 text-black dark:text-[#f8f4e2] opacity-70 sm:opacity-60 uppercase tracking-widest">
+            Dip Shill
+          </h1>
+          
+        </div>
+        <div class="absolute  left-15 sm:left-290  top-2/4 sm:top-2/11 transform -translate-y-1/8  mr-5 sm:mr-15 z-10">
+          <img src="/src/assets/images/Adobe Express - file.png" alt="Your Image" class="w-[355px] sm:w-[600px] h-auto object-cover" >
+          </img>
+        </div>
+        <div class="max-w-[1300px] mt-20 sm:mt-55 mb-50 sm:mb-0 w-full ">
+          <div class="typewriter-container pl-6 font-bold sm:font-medium min-h-[5rem] sm:min-h-[10rem]">
+            <div id="typewriter-lines" class=" sm:text-2xl md:text-4xl font-mono text-black dark:text-white leading-relaxed transition-opacity duration-300"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed top-200 sm:top-213 left-2 sm:left-10 z-10">
+      <svg class="size-10 sm:size-13 animate-bounce text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"  d="m11.99 16.5 3.75 3.75m0 0 3.75-3.75m-3.75 3.75V3.75H4.49"/>
+      </svg>
+    </div>
+
+
+    
+    
+    
+
+
+
+    <!-- Spacer to allow scrolling -->
+    <div class="h-screen sm:h-screen"></div>
+
+    <!-- About Me Section (scrolls over home) -->
+    <section id="about" class="relative z-10 w-full py-23 bg-black flex justify-center items-center">
+      <div class="w-full flex flex-col sm:flex-row items-center gap-10 px-2 md:px-12">
+    
+        <div class="w-90 sm:w-full text-center mb-7 sm:mb-0 pr-1 sm:pr-10 ">
+          <h2 class="text-[min(30vw,50px)] sm:text-[min(30vw,70px)] text-[#fdfaecc0] inline-block  transition-transform duration-200 hover:-translate-y-1  hover:scale-104 hover:text-[#fdfaecc9] tracking-widest font-extrabold font-anime ">
+            About Me
+          </h2>
+        </div>
+        <div class="flex flex-col ">
+          <p class=" text-[1.2rem] sm:text-[1.6rem]  text-white sm:ml-0 ml-5 sm:mr-40 w-90 sm:w-210 tracking-wide p-0 sm:p-10 font-mono">
+            I'm a motivated and self-driven student with a strong interest in cloud computing, web development, and system administration. I enjoy building real-world, scalable applications using modern tools and technologies. From designing responsive frontends to deploying cloud-native backends, I strive to create impactful digital solutions while continuously learning and improving.
+          </p>
+          <ul class="ml-6 sm:ml-12 mt-5 text-[1.0rem]  sm:text-[1.4rem] list-disc list-inside text-white font-mono">
+            <li>Cloud-Native Backend Development</li>
+            <li>Full-Stack Project Execution</li>
+            <li>AWS Infrastructure Experience</li>
+            <li>Linux & Automation Proficiency</li>
+            <li>Version Control with Git & GitHub</li>
+            <li>Responsive Frontend Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="relative z-10 w-full py-23 bg-[#fdfaec] dark:bg-[#7a7a7a] flex flex-col">
+      <div class="w-full flex flex-col gap-10 md:px-12">
+
+        <!-- Projects heading below the video -->
+        <div class="w-full text-center mb-0 pl-5 sm:pl-2 sm:pr-10 ">
+          <h2 class=" text-[min(30vw,60px)] sm:text-[min(30vw,80px)] text-[#141414c0] dark:text-[#fcf7e4dc] text-shadow-lg/50 inline-block   tracking-widest font-light font-anime">
+            Projects
+          </h2>
+        </div>
+
+        <!-- Video section above the heading -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
+
+          <div class="sm:ml-60 text-center justify-center bg-red-500 p-0  ring-2 ring-gray-700 dark:ring-gray-300 sm:w-80 w-60 h-50 sm:h-60  rounded-lg border overflow-hidden shadow-lg relative group hover:shadow-2xl/50 hover:cursor-pointer hover:scale-113 transition-transform duration-300 ease-in">
+            <img id="projectThumb1" src="/src/assets/images/project_thumb1.png" alt="Project Thumbnail" class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-300 pointer-events-none" style="opacity:1;" />
+            <video id="projectVideo1" class="w-full h-full object-cover rounded-lg " preload="none" loop muted playsinline style="z-index:1;">
+                <source src="/src/assets/videos/project_vid1.mp4" type="video/mp4">
+            </video>
+            <script>
+              const video1 = document.getElementById('projectVideo1');
+              const thumb1 = document.getElementById('projectThumb1');
+              const container1 = video1.parentElement;
+              container1.addEventListener('mouseover', () => {
+                thumb1.style.opacity = 0;
+                video1.play();
+              });
+              container1.addEventListener('mouseout', () => {
+                video1.pause();
+                video1.currentTime = 0;
+                thumb1.style.opacity = 1;
+              });
+            </script>
+          </div> 
+          <div class="flex flex-col items-start sm:items-end text-left ml-auto "> 
+            <h1 class="font-bold text-shadow-lg/20 dark:text-shadow-lg/30 text-left ml-7 sm:pl-3 w-100 sm:w-240 text-[1.4rem] sm:text-3xl text-gray-700 dark:text-[#faf8f2dc] mb-4 p-0 font-mono ">
+              <u>KindDoner – Cloud-Powered Donation Platform</u>
+            </h1>
+            <p class=" text-[1.2rem] sm:text-[1.5rem] text-shadow-lg/10 pl-8 sm:pl-0 dark:text-shadow-lg/15 text-gray-700 dark:text-[#faf8f2dc] sm:mr-28 w-110 sm:w-210 tracking-wide pr-10 text-left font-mono">
+              A full-stack serverless web app built solo, KindDoner
+              enables users to submit donation details (both physical and monetary) 
+              through a clean, responsive UI. The frontend is crafted with HTML, CSS,
+              and JavaScript, while the backend leverages AWS Lambda, API Gateway, 
+              and DynamoDB to securely handle submissions. Physical donations capture 
+              dynamic item details and contact info, while monetary contributions use a
+              simple, mobile-friendly UPI QR system. This project strengthened my skills 
+              in serverless architecture, REST API development, and AWS services.
+              <a href="https://github.com/deep2234/KindDoner" target="_blank" rel="noopener" class="text-blue-800 hover:text-blue-700"> 🔗[GitHub Repo- Click Here] </a>
+            </p>
+          </div>
+        </div>
+
+        <hr class="my-10 border-t-2 border-gray-500 dark:border-gray-300 w-4/5 mx-auto" />
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
+
+          <div class="sm:ml-60 text-center justify-center bg-red-500 p-0  ring-2 ring-gray-700 dark:ring-gray-300 sm:w-80 w-60 h-50 sm:h-60  rounded-lg border overflow-hidden shadow-lg relative group hover:shadow-2xl/50 hover:cursor-pointer hover:scale-113 transition-transform duration-300 ease-in">
+            <img id="projectThumb2" src="/src/assets/images/project_thumb1.png" alt="Project Thumbnail" class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-300 pointer-events-none" style="opacity:1;" />
+            <video id="projectVideo2" class="w-full h-full object-cover rounded-lg " preload="none"loop muted playsinline style="z-index:1;">
+                <source src="/src/assets/videos/project_vid1.mp4" type="video/mp4">
+            </video>
+            <script>
+              const video2 = document.getElementById('projectVideo2');
+              const thumb2 = document.getElementById('projectThumb2');
+              const container2 = video2.parentElement;
+              container2.addEventListener('mouseover', () => {
+                thumb2.style.opacity = 0;
+                video2.play();
+              });
+              container2.addEventListener('mouseout', () => {
+                video2.pause();
+                video2.currentTime = 0;
+                thumb2.style.opacity = 1;
+              });
+            </script>         
+          </div> 
+          <div class="flex flex-col items-start sm:items-end text-left ml-auto "> 
+            <h1 class="font-bold text-shadow-lg/20 dark:text-shadow-lg/30 text-left ml-7 sm:pl-3 w-100 sm:w-240 text-[1.4rem] sm:text-3xl text-gray-700 dark:text-[#faf8f2dc] mb-4 p-0 font-mono ">
+              <u>KindDoner – Cloud-Powered Donation Platform</u>
+            </h1>
+            <p class=" text-[1.2rem] sm:text-[1.5rem] text-shadow-lg/10 pl-8 sm:pl-0 dark:text-shadow-lg/15 text-gray-700 dark:text-[#faf8f2dc] sm:mr-28 w-110 sm:w-210 tracking-wide pr-10 text-left font-mono">
+              A full-stack serverless web app built solo, KindDoner
+              enables users to submit donation details (both physical and monetary) 
+              through a clean, responsive UI. The frontend is crafted with HTML, CSS,
+              and JavaScript, while the backend leverages AWS Lambda, API Gateway, 
+              and DynamoDB to securely handle submissions. Physical donations capture 
+              dynamic item details and contact info, while monetary contributions use a
+              simple, mobile-friendly UPI QR system. This project strengthened my skills 
+              in serverless architecture, REST API development, and AWS services.
+              <a href="https://github.com/deep2234/KindDoner" target="_blank" rel="noopener" class="text-blue-800 hover:text-blue-700"> 🔗[GitHub Repo- Click Here] </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="relative z-10 w-full py-23 bg-black flex flex-col">
+      <div class="w-full flex flex-col gap-10 md:px-12">
+        <div class="w-full text-center mb-0 pr-2 sm:pr-10">
+          <h2 class="text-[min(30vw,45px)] sm:text-[min(30vw,75px)] text-[#fcf7e4dc] text-shadow-lg/50 inline-block tracking-widest font-light font-anime">
+            Tech Stack
+          </h2>
+        </div>
+    
+        <!-- White box with technology items -->
+        <div class="w-full flex justify-center">
+          <div class="bg-[#f8f5eb]  dark:bg-gray-800 rounded-2xl p-8 shadow-2xl max-w-2xl sm:max-w-5xl w-full mx-6 sm:mx-4">
+            <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-10">
+
+
+              <!-- AWS -->
+              <div class="flex flex-col items-center sm:pt-2 rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/AWS-Cloud-logo_32.svg" alt="AWS" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">AWS</span>
+              </div>
+
+              <!-- Terraform -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-terraform-96.png" alt="Terraform" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Terraform</span>
+              </div>
+
+              <!-- Jenkins -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-jenkins-96.png" alt="Jenkins" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Jenkins</span>
+              </div>
+
+              <!-- Docker --> 
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-docker-96 (1).png" alt="Docker" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Docker</span>
+              </div>
+
+              <!-- Linux -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-linux-server-80.png" alt="Linux" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Linux</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-github-200.png" alt="GitHub" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">GitHub</span>
+              </div>
+    
+              <!-- Git -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-git-96.png" alt="Git" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Git</span>
+              </div>
+
+              <!-- python  -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-python-200.png" alt="Python" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Python</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="flex flex-col items-center rounded-lg  dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-javascript-128.png" alt="JavaScript" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">JavaScript</span>
+              </div>
+              
+              
+                  
+              <!-- Tailwind CSS -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-tailwind-css-200.png" alt="Tailwind CSS" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Tailwind CSS</span>
+              </div>
+    
+              <!-- HTML -->
+              <div class="flex  flex-col  items-center rounded-lg    dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-html-5-200.png" alt="HTML5" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">HTML5</span>
+              </div>
+    
+              <!-- CSS -->
+              <div class="flex flex-col items-center  rounded-lg  dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-css3-200.png" alt="CSS3" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">CSS3</span>
+              </div>
+
+              <!-- c -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-c-200.png" alt="C" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">C</span>
+              </div>
+
+              <!-- C++ -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/icons8-c-96.png" alt="C++" class="sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">C++</span>
+              </div>
+    
+
+    
+              <!-- AWS Lambda -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_AWS-Lambda_64.svg" alt="AWS Lambda" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">AWS Lambda</span>
+              </div>
+    
+              <!-- API Gateway -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_Amazon-API-Gateway_64.svg" alt="API Gateway" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">API Gateway</span>
+              </div>
+    
+              <!-- DynamoDB -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_Amazon-DynamoDB_64.svg" alt="DynamoDB" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">DynamoDB</span>
+              </div>
+    
+              <!-- Amazon S3 -->
+                <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_Amazon-S3-on-Outposts_64.svg" alt="Amazon S3" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Amazon S3</span>
+              </div>
+    
+              <!-- CloudFront -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_Amazon-CloudFront_64.svg" alt="CloudFront" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">CloudFront</span>
+              </div>
+
+              <!-- Certificate Manager --> 
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_AWS-Certificate-Manager_64.svg" alt="Certificate Manager" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Certificate Manager</span>
+              </div>
+
+              <!-- Route 53 --> 
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a67] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/Arch_Amazon-Route-53_64.svg" alt="Route 53" class="w-16 h-16 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Route 53</span>
+              </div>
+    
+              
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="relative z-10 w-full py-23 bg-[#fdfaec] dark:bg-[#7a7a7a] flex flex-col">
+      <h2 class=" text-[min(30vw,50px)] sm:text-[min(30vw,80px)] text-[#141414c0] dark:text-[#fcf7e4dc] text-shadow-lg/30 sm:text-shadow-lg/50 inline-block  text-center tracking-widest font-light  font-anime">
+        Reach Out
+      </h2>
+      <div class="flex justify-center gap-3 sm:gap-30 mt-10 mb-2 sm:mb-10">
+        <!-- Email -->
+        <a href="mailto:dipshill007@gmail.com" class="sm:w-40 w-20 h-20 sm:h-40 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:scale-130 transition-transform duration-300">
+          <img src="/src/assets/images/icons/reachout/email_icon.png" alt="email" class="sm:w-50 w-30 h-22 sm:h-40 mb-3" />
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/dipshill/" target="_blank" rel="noopener" class="sm:w-40 w-20 h-20 sm:h-40 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:scale-130 transition-transform duration-300">
+          <img src="/src/assets/images/icons/reachout/icons8-linkedin-200.png" alt="linkedin" class="sm:w-50 w-30 h-22 sm:h-40 mb-3" />
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/deep2234" target="_blank" rel="noopener" class="sm:w-40 w-20 h-20 sm:h-40 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:scale-130 transition-transform duration-300">
+          <img src="/src/assets/images/icons/reachout/icons8-github-200 (1).png" alt="github" class="sm:w-50 w-30 h-22 sm:h-40 mb-3" />
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/deep_shill__/" target="_blank" rel="noopener" class="sm:w-40 w-20 h-20 sm:h-40 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:scale-130 transition-transform duration-300">
+          <img src="/src/assets/images/icons/reachout/icons8-instagram-200.png" alt="instagram" class="sm:w-50 w-30 h-22 sm:h-40 mb-3" />
+        </a>
+        
+      </div>
+    </section>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector("#toggle");
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark");
+        });
+      });
+    </script>
+
+
+
+
+
+    <script>
+      document.querySelectorAll('nav a[href^="#"]:not([href="#"])').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href').slice(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+
+
+    <script>
+      const phrases = [
+        "Turning ideas into scalable solutions through code, cloud, and creativity.",
+        "Blending creativity with technology to solve real-world problems.",
+        "A curious tech explorer — transforming learning into building, and building into lasting impact.",
+        "Developer. Problem Solver. Lifelong Learner — always evolving, always creating.",
+      ];
+
+      let currentPhraseIndex = 0;
+      let currentWordIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+      let isPaused = false;
+      let currentWords = [];
+      let lines = [];
+
+      const typewriterContainer = document.getElementById("typewriter-lines");
+      const typingSpeed = 60;
+      const deletingSpeed = 30;
+      const pauseAfterComplete = 3000;
+      const pauseAfterDelete = 400;
+
+      // Break phrase into lines based on word count and length
+      function breakIntoLines(phrase) {
+        const words = phrase.split(" ");
+        const lines = [];
+        let currentLine = [];
+
+        for (let word of words) {
+          const lineLength = currentLine.join(" ").length;
+          if (
+            currentLine.length >= 5 ||
+            (lineLength > 30 && currentLine.length >= 3)
+          ) {
+            lines.push([...currentLine]);
+            currentLine = [word];
+          } else {
+            currentLine.push(word);
+          }
+        }
+        if (currentLine.length > 0) {
+          lines.push(currentLine);
+        }
+        return lines;
+      }
+
+      // Create line structure for the current phrase
+      function createLineStructure() {
+        const phrase = phrases[currentPhraseIndex];
+        lines = breakIntoLines(phrase);
+        currentWords = lines.flat();
+
+        typewriterContainer.innerHTML = "";
+        lines.forEach((_, index) => {
+          const lineElement = document.createElement("div");
+          lineElement.className =
+            "line flex justify-left flex-wrap gap-2 min-h-[2.5rem]";
+          lineElement.id = `line-${index}`;
+          typewriterContainer.appendChild(lineElement);
+        });
+      }
+
+      // Determine current line and position within it
+      function getCurrentLineAndPosition() {
+        let wordCount = 0;
+        let lineIndex = 0;
+        let positionInLine = 0;
+
+        for (let i = 0; i < lines.length; i++) {
+          if (currentWordIndex < wordCount + lines[i].length) {
+            lineIndex = i;
+            positionInLine = currentWordIndex - wordCount;
+            break;
+          }
+          wordCount += lines[i].length;
+        }
+        return { lineIndex, positionInLine };
+      }
+
+      // Update the display with typed words
+      function updateDisplay() {
+        // If paused and typing is complete, show full phrase
+        if (isPaused && currentWordIndex >= currentWords.length) {
+          lines.forEach((line, i) => {
+            const lineElement = document.getElementById(`line-${i}`);
+            // Only update if line is empty
+            if (lineElement.childElementCount === 0) {
+              lineElement.innerHTML = "";
+              line.forEach((word) => {
+                const wordSpan = document.createElement("span");
+                wordSpan.className = "word whitespace-nowrap";
+                wordSpan.textContent = word;
+                lineElement.appendChild(wordSpan);
+              });
+            }
+          });
+          return;
+        }
+
+        // Clear and update lines for typing or deleting
+        const { lineIndex, positionInLine } = getCurrentLineAndPosition();
+        lines.forEach((_, index) => {
+          document.getElementById(`line-${index}`).innerHTML = "";
+        });
+
+        // Fill completed lines
+        for (let i = 0; i < lineIndex; i++) {
+          const lineElement = document.getElementById(`line-${i}`);
+          lines[i].forEach((word) => {
+            const wordSpan = document.createElement("span");
+            wordSpan.className = "word whitespace-nowrap";
+            wordSpan.textContent = word;
+            lineElement.appendChild(wordSpan);
+          });
+        }
+
+        // Fill current line
+        if (lineIndex < lines.length) {
+          const currentLineElement = document.getElementById(
+            `line-${lineIndex}`
+          );
+          for (let i = 0; i < positionInLine; i++) {
+            const wordSpan = document.createElement("span");
+            wordSpan.className = "word whitespace-nowrap";
+            wordSpan.textContent = lines[lineIndex][i];
+            currentLineElement.appendChild(wordSpan);
+          }
+
+          // Add currently typing/deleting word
+          if (currentWordIndex < currentWords.length) {
+            const currentWord = lines[lineIndex][positionInLine] || "";
+            const partialWord = currentWord.substring(0, currentCharIndex);
+            const wordSpan = document.createElement("span");
+            wordSpan.className = "word whitespace-nowrap";
+            wordSpan.textContent = partialWord;
+            currentLineElement.appendChild(wordSpan);
+
+            // Add cursor
+            const cursor = document.createElement("span");
+            cursor.className = "cursor text-red-500 font-normal";
+            cursor.textContent = "|";
+            currentLineElement.appendChild(cursor);
+          }
+        }
+      }
+
+      // Typewriter effect
+      function typeWriter() {
+        if (isPaused) return;
+
+        const currentWord = currentWords[currentWordIndex] || "";
+
+        if (!isDeleting) {
+          // Typing
+          if (currentWordIndex < currentWords.length) {
+            typewriterContainer.classList.remove("opacity-50");
+            if (currentCharIndex < currentWord.length) {
+              currentCharIndex++;
+              updateDisplay();
+              setTimeout(typeWriter, typingSpeed + Math.random() * 20);
+            } else {
+              currentWordIndex++;
+              currentCharIndex = 0;
+              updateDisplay();
+              setTimeout(typeWriter, typingSpeed);
+            }
+          } else {
+            // Finished typing, apply subtle fade effect
+            isPaused = true;
+            updateDisplay();
+            typewriterContainer.classList.add("opacity-50");
+            setTimeout(() => {
+              typewriterContainer.classList.remove("opacity-50");
+              setTimeout(() => {
+                isPaused = false;
+                isDeleting = true;
+                currentWordIndex = currentWords.length - 1;
+                currentCharIndex = currentWords[currentWordIndex].length;
+                updateDisplay();
+                setTimeout(typeWriter, deletingSpeed);
+              }, 550); // Short delay to complete fade-in
+            }, 550); // Short fade-out duration
+          }
+        } else {
+          // Deleting
+          typewriterContainer.classList.remove("opacity-50");
+          if (currentWordIndex >= 0) {
+            if (currentCharIndex > 0) {
+              currentCharIndex--;
+              updateDisplay();
+              setTimeout(typeWriter, deletingSpeed);
+            } else {
+              currentWordIndex--;
+              if (currentWordIndex >= 0) {
+                currentCharIndex = currentWords[currentWordIndex].length;
+                updateDisplay();
+                setTimeout(typeWriter, deletingSpeed);
+              } else {
+                isDeleting = false;
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                currentWordIndex = 0;
+                currentCharIndex = 0;
+                isPaused = true;
+                typewriterContainer.classList.add("opacity-50");
+                setTimeout(() => {
+                  isPaused = false;
+                  createLineStructure();
+                  updateDisplay();
+                  typewriterContainer.classList.remove("opacity-50");
+                  typeWriter();
+                }, pauseAfterDelete);
+              }
+            }
+          }
+        }
+      }
+
+      // Initialize and start
+      createLineStructure();
+      updateDisplay();
+      typeWriter();
+
+      // Smooth entrance animation
+      document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".max-w-2xl");
+        container.style.opacity = "0";
+        container.style.transform = "translateY(100px)";
+        setTimeout(() => {
+          container.style.transition =
+            "opacity 0.8s ease-out, transform 0.8s ease-out";
+          container.style.opacity = "1";
+          container.style.transform = "translateY(0)";
+        }, 100);
+      });
+    </script>
+
+
+
+    <style>
+      .cursor {
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+      .typewriter-container {
+        min-height: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+      }
+      .line {
+        min-height: 2.5rem;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .word {
+        white-space: nowrap;
+      }
+      @media (max-width: 640px) {
+        .typewriter-container {
+          min-height: 16rem;
+        }
+        .line {
+          min-height: 2rem;
+        }
+      }
+    </style>
+
+    <!-- Footer -->
+    <footer class="w-full backdrop-opacity-100 bg-white dark:bg-gray-900 py-8 z-30 border-t border-gray-300 dark:border-gray-700">
+
+      <div class="w-full px-0 flex flex-row items-center justify-between gap-2">
+        <div class="flex w-full items-center justify-between text-gray-700  dark:text-gray-200 text-lg font-mono font-semibold">
+          <div id="counter-number" class=" pl-5 hidden md:block sm:w-70">Couldn't read views</div>
+          <h1 class="sm:pr-160 pl-10 pr-5 mt-0 mb-0 text-[0.8rem]  sm:text-lg"> ©2025 Dip Shill. All rights and lefts reserved. Icons by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a></h1>
+        </div>
+      </div>
+      
+        
+    </footer>
+
+    <script src="/src/script.js"></script>
+
+</body>
+</html> 

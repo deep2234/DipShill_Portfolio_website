@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.grid-bg {
+    background-image: linear-gradient(90deg, #e0e0e0 1px, transparent 1px),
+                     linear-gradient(0deg, #e0e0e0 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+.dark .grid-bg {
+    background-image: linear-gradient(90deg, #333333 1px, transparent 1px),
+                     linear-gradient(0deg, #333333 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
