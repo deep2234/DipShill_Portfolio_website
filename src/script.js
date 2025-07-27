@@ -7,3 +7,11 @@ async function updateCounter() {
 }
 
 updateCounter();
+
+
+
+module.exports = {
+    darkMode: 'class', // Make sure this is set
+    // ...other config
+};
+  
