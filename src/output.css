@@ -992,10 +992,45 @@
       }
     }
   }
+  .hover\:bg-\[\#\#7a7a7a49\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: ##7a7a7a49;
+      }
+    }
+  }
+  .hover\:bg-\[\#7a7a7a2f\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #7a7a7a2f;
+      }
+    }
+  }
+  .hover\:bg-\[\#7a7a7a3a\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #7a7a7a3a;
+      }
+    }
+  }
+  .hover\:bg-\[\#7a7a7a49\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #7a7a7a49;
+      }
+    }
+  }
   .hover\:bg-\[\#7a7a7a67\] {
     &:hover {
       @media (hover: hover) {
         background-color: #7a7a7a67;
+      }
+    }
+  }
+  .hover\:bg-\[\#7a77a7a7a49a7a67\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #7a77a7a7a49a7a67;
       }
     }
   }
