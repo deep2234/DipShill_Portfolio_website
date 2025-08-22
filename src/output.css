@@ -212,6 +212,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -381,6 +384,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -422,6 +428,12 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-13 {
+    width: calc(var(--spacing) * 13);
+  }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
   }
   .w-15 {
     width: calc(var(--spacing) * 15);
@@ -542,6 +554,13 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -992,45 +1011,10 @@
       }
     }
   }
-  .hover\:bg-\[\#\#7a7a7a49\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: ##7a7a7a49;
-      }
-    }
-  }
-  .hover\:bg-\[\#7a7a7a2f\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #7a7a7a2f;
-      }
-    }
-  }
-  .hover\:bg-\[\#7a7a7a3a\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #7a7a7a3a;
-      }
-    }
-  }
   .hover\:bg-\[\#7a7a7a49\] {
     &:hover {
       @media (hover: hover) {
         background-color: #7a7a7a49;
-      }
-    }
-  }
-  .hover\:bg-\[\#7a7a7a67\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #7a7a7a67;
-      }
-    }
-  }
-  .hover\:bg-\[\#7a77a7a7a49a7a67\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #7a77a7a7a49a7a67;
       }
     }
   }
@@ -1167,6 +1151,21 @@
       height: calc(var(--spacing) * 13);
     }
   }
+  .sm\:h-2 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 2);
+    }
+  }
+  .sm\:h-20 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:h-21 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 21);
+    }
+  }
   .sm\:h-22 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 22);
@@ -1190,6 +1189,26 @@
   .sm\:min-h-\[10rem\] {
     @media (width >= 40rem) {
       min-height: 10rem;
+    }
+  }
+  .sm\:w-2 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 2);
+    }
+  }
+  .sm\:w-18 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 18);
+    }
+  }
+  .sm\:w-19 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 19);
+    }
+  }
+  .sm\:w-20 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 20);
     }
   }
   .sm\:w-22 {

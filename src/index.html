@@ -292,18 +292,21 @@
           </div> 
           <div class="flex flex-col items-start sm:items-end text-left ml-auto "> 
             <h1 class="font-bold text-shadow-lg/20 dark:text-shadow-lg/30 text-left ml-7 sm:pl-3 w-100 sm:w-240 text-[1.4rem] sm:text-3xl text-gray-700 dark:text-[#faf8f2dc] mb-4 p-0 font-mono ">
-              <u>KindDoner – Cloud-Powered Donation Platform</u>
+              <u>Netflix Clone - Complete DevSecOps Pipeline</u>
             </h1>
             <p class=" text-[1.2rem] sm:text-[1.5rem] text-shadow-lg/10 pl-8 sm:pl-0 dark:text-shadow-lg/15 text-gray-700 dark:text-[#faf8f2dc] sm:mr-28 w-110 sm:w-210 tracking-wide pr-10 text-left font-mono">
-              A full-stack serverless web app built solo, KindDoner
-              enables users to submit donation details (both physical and monetary) 
-              through a clean, responsive UI. The frontend is crafted with HTML, CSS,
-              and JavaScript, while the backend leverages AWS Lambda, API Gateway, 
-              and DynamoDB to securely handle submissions. Physical donations capture 
-              dynamic item details and contact info, while monetary contributions use a
-              simple, mobile-friendly UPI QR system. This project strengthened my skills 
-              in serverless architecture, REST API development, and AWS services.
-              <a href="https://github.com/deep2234/KindDoner" target="_blank" rel="noopener" class="text-blue-800 hover:text-blue-700"> 🔗[GitHub Repo- Click Here] </a>
+              <p class=" text-[1.2rem] sm:text-[1.5rem] text-shadow-lg/10 pl-8 sm:pl-0 dark:text-shadow-lg/15 text-gray-700 dark:text-[#faf8f2dc] sm:mr-28 w-110 sm:w-210 tracking-wide pr-10 text-left font-mono">
+                A comprehensive DevSecOps implementation of a Netflix clone 
+                application demonstrating enterprise-level CI/CD practices. 
+                The project automates the entire software delivery lifecycle from 
+                code commit to production deployment, integrating security scanning 
+                with SonarQube and Trivy, containerized deployment using Docker and Kubernetes on AWS EKS, 
+                GitOps deployment with ArgoCD, and real-time monitoring with Prometheus and Grafana dashboards.<br>
+              <a href="https://github.com/deep2234/netflix-jenkins-kubernetes" target="_blank" rel="noopener" class="text-blue-800 hover:text-blue-700"> 🔗[GitHub Repo- Click Here] </a>
+              </p>
+
+              
+
             </p>
           </div>
         </div>
@@ -337,18 +340,57 @@
               <u>KindDoner – Cloud-Powered Donation Platform</u>
             </h1>
             <p class=" text-[1.2rem] sm:text-[1.5rem] text-shadow-lg/10 pl-8 sm:pl-0 dark:text-shadow-lg/15 text-gray-700 dark:text-[#faf8f2dc] sm:mr-28 w-110 sm:w-210 tracking-wide pr-10 text-left font-mono">
-              A full-stack serverless web app built solo, KindDoner
-              enables users to submit donation details (both physical and monetary) 
-              through a clean, responsive UI. The frontend is crafted with HTML, CSS,
-              and JavaScript, while the backend leverages AWS Lambda, API Gateway, 
-              and DynamoDB to securely handle submissions. Physical donations capture 
-              dynamic item details and contact info, while monetary contributions use a
-              simple, mobile-friendly UPI QR system. This project strengthened my skills 
-              in serverless architecture, REST API development, and AWS services.
+              A full-stack serverless donation platform built to 
+              facilitate both physical and monetary contributions through a responsive web interface. 
+              The application features a frontend developed with HTML, CSS, and JavaScript, 
+              powered by a serverless backend using AWS Lambda, API Gateway, and DynamoDB for secure data handling. 
+              The platform supports dynamic physical donation submissions with item details and contact information, 
+              alongside a streamlined monetary donation system using mobile-friendly UPI QR codes.
               <a href="https://github.com/deep2234/KindDoner" target="_blank" rel="noopener" class="text-blue-800 hover:text-blue-700"> 🔗[GitHub Repo- Click Here] </a>
             </p>
           </div>
         </div>
+
+        <hr class="my-10 border-t-2 border-gray-500 dark:border-gray-300 w-4/5 mx-auto" />
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
+
+          <div class="fill-white drop-shadow-xl/25 sm:ml-60 text-center justify-center bg-red-500 p-0  ring-2 ring-gray-700 dark:ring-gray-300 sm:w-80 w-60 h-50 sm:h-60  rounded-lg border overflow-hidden shadow-lg relative group hover:shadow-2xl/50 hover:cursor-pointer hover:scale-113 transition-transform duration-300 ease-in">
+            <img id="projectThumb2" src="/src/assets/images/project_thumb1.png" alt="Project Thumbnail" class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-300 pointer-events-none" style="opacity:1;" />
+            <video id="projectVideo2" class="w-full h-full object-cover rounded-lg " preload="none"loop muted playsinline style="z-index:1;">
+                <source src="/src/assets/videos/project_vid1.mp4" type="video/mp4">
+            </video>
+            <script>
+              const video3 = document.getElementById('projectVideo2');
+              const thumb3 = document.getElementById('projectThumb2');
+              const container3 = video3.parentElement;
+              container3.addEventListener('mouseover', () => {
+                thumb3.style.opacity = 0;
+                video3.play();
+              });
+              container3.addEventListener('mouseout', () => {
+                video3.pause();
+                video3.currentTime = 0;
+                thumb3.style.opacity = 1;
+              });
+            </script>         
+          </div> 
+          <div class="flex flex-col items-start sm:items-end text-left ml-auto "> 
+            <h1 class="font-bold text-shadow-lg/20 dark:text-shadow-lg/30 text-left ml-7 sm:pl-3 w-100 sm:w-240 text-[1.4rem] sm:text-3xl text-gray-700 dark:text-[#faf8f2dc] mb-4 p-0 font-mono ">
+              <u>CI/CD Pipeline Implementation</u>
+            </h1>
+            <p class=" text-[1.2rem] sm:text-[1.5rem] text-shadow-lg/10 pl-8 sm:pl-0 dark:text-shadow-lg/15 text-gray-700 dark:text-[#faf8f2dc] sm:mr-28 w-110 sm:w-210 tracking-wide pr-10 text-left font-mono">
+              A hands-on comparison of GitHub Actions and Jenkins CI/CD tools 
+              by building two static websites with automated deployment pipelines. 
+              The project demonstrates containerized deployment using Docker and NGINX, 
+              GitHub Actions workflow with Docker Hub integration, 
+              Jenkins pipeline configuration with GitHub Webhooks, 
+              and complete CI/CD automation from code push to deployment using local Jenkins setup exposed via ngrok.
+              <a href="https://github.com/deep2234/KindDoner" target="_blank" rel="noopener" class="text-blue-800 hover:text-blue-700"> 🔗[GitHub Repo- Click Here] </a>
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -370,6 +412,12 @@
               <div class="flex flex-col  items-center sm:pt-2 rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
                 <img src="/src/assets/images/icons/AWS-Cloud-logo_32.svg" alt="AWS" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
                 <span class="text-lg font-semibold text-gray-800 dark:text-white">AWS</span>
+              </div>
+
+              <!-- Kubernetes -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/kubernetes-144.png" alt="Kubernetes" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Kubernetes</span>
               </div>
 
               <!-- Terraform -->
@@ -402,6 +450,37 @@
                 <span class="text-lg font-semibold text-gray-800 dark:text-white">Linux</span>
               </div>
 
+              <!-- Prometheus -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/prometheus-144.png" alt="Prometheus" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Prometheus</span>
+              </div>
+
+              <!-- Grafana -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/grafana.png" alt="Grafana" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-15 sm:h-21 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Grafana</span>
+              </div>
+
+
+              <!-- Argocd -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/argocd.webp" alt="Argocd" class="fill-white drop-shadow-xl/50 sm:w-18 w-13 h-15 sm:h-20 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">ArgoCD</span>
+              </div>
+
+              <!-- SonarQube -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/sonarwube.png" alt="SonarQube" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">SonarQube</span>
+              </div>
+    
+              <!-- trivy -->
+              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
+                <img src="/src/assets/images/icons/trivy.png" alt="Trivy" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
+                <span class="text-lg font-semibold text-gray-800 dark:text-white">Trivy</span>
+              </div>
+
               <!-- GitHub -->
               <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
                 <img src="/src/assets/images/icons/icons8-github-200.png" alt="GitHub" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
@@ -414,7 +493,7 @@
                 <span class="text-lg font-semibold text-gray-800 dark:text-white">Git</span>
               </div>
 
-              <!-- python  -->
+              <!-- Python -->
               <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
                 <img src="/src/assets/images/icons/icons8-python-200.png" alt="Python" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
                 <span class="text-lg font-semibold text-gray-800 dark:text-white">Python</span>
@@ -457,53 +536,7 @@
                 <img src="/src/assets/images/icons/icons8-c-96.png" alt="C++" class="fill-white drop-shadow-xl/50 sm:w-22 w-16 h-16 sm:h-22 mb-3" />
                 <span class="text-lg font-semibold text-gray-800 dark:text-white">C++</span>
               </div>
-    
 
-    
-              <!-- AWS Lambda -->
-              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_AWS-Lambda_64.svg" alt="AWS Lambda" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">AWS Lambda</span>
-              </div>
-    
-              <!-- API Gateway -->
-              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_Amazon-API-Gateway_64.svg" alt="API Gateway" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">API Gateway</span>
-              </div>
-    
-              <!-- DynamoDB -->
-              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_Amazon-DynamoDB_64.svg" alt="DynamoDB" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">DynamoDB</span>
-              </div>
-    
-              <!-- Amazon S3 -->
-                <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_Amazon-S3-on-Outposts_64.svg" alt="Amazon S3" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">Amazon S3</span>
-              </div>
-    
-              <!-- CloudFront -->
-              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_Amazon-CloudFront_64.svg" alt="CloudFront" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">CloudFront</span>
-              </div>
-
-              <!-- Certificate Manager --> 
-              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_AWS-Certificate-Manager_64.svg" alt="Certificate Manager" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">Certificate Manager</span>
-              </div>
-
-              <!-- Route 53 --> 
-              <div class="flex flex-col items-center rounded-lg   dark:border-gray-700 hover:bg-[#7a7a7a49] dark:hover:bg-gray-700 transition-colors duration-300">
-                <img src="/src/assets/images/icons/Arch_Amazon-Route-53_64.svg" alt="Route 53" class="fill-white drop-shadow-xl/50 w-16 h-16 mb-3" />
-                <span class="text-lg font-semibold text-gray-800 dark:text-white">Route 53</span>
-              </div>
-    
-              
-    
             </div>
           </div>
         </div>
